@@ -85,8 +85,41 @@ _______/\\\\\________/\\\\\\\\\\\\______/\\\________/\\\______/\\\\\\\\\\\______
     a. assign the correct values to the variables below,
     b. ensure to choose the correct values and datatypes
     c. the droid should be built in your likeness (a human, with human features, 2 arms, legs etc)
-*/
+     Refactor (change) all the variables you have in place that initializes the android into an android object.
+ - Your android needs a head, upperBody, lowerBody & [ anyThingElseYouCanDreamOf ].
+ - Feel free to create any new properties that will further describe your android [ anyThingYouCanDreamOf ].
+ - next update your application to use this newly refactored code
 
+ tip: the console.log that prints the variables of the android will need to be updated
+
+
+
+var myAndroid = {
+  head: {
+    fullName: "CorrNave",
+    eyes: 2,
+    eyeColor: "green",
+    ears: 2,
+    hairColor: "yellow",
+    isAlive: true,
+    isInGoodMood: true,
+  },
+  body: {
+    legs: 2,
+    arms: 2,
+    hands: 2,
+  },
+  state: {
+    canRun: false,
+    canWalk: true,
+    canFly: true,
+  },
+  inventory: {
+    hasWeapon: true,
+    hasJetPack: true,
+  }
+};
+*/
 var isAlive = true;
 var fullName = "Corr" + " Nave";
 var suitColor = "purple";
@@ -173,7 +206,7 @@ console.log('\u{1F47E} ALIENS SPACE CRAFT ENCROACHING::::::');
 var enemyCraft = true;
 var photonLaser = true;
 var photonLaserEnabled = true;
-var bullets = 100;
+var bullets = 101;
 
 if (enemyCraft && photonLaser && photonLaserEnabled) {
   if (bullets <= 100) {
